@@ -248,11 +248,12 @@ header{
   padding:34px 30px;
 }
 .contact-card h3{font-size:18px;font-weight:800;margin-bottom:20px;color:var(--green-900)}
+.contact-card{display:flex;flex-direction:column}
 .contact-item{
-  display:flex;gap:14px;align-items:flex-start;
-  padding:12px 0;border-bottom:1px solid var(--gray-200);
+  display:flex;gap:14px;align-items:center;
+  flex:1;padding:12px 0;border-bottom:1px solid var(--gray-200);
 }
-.contact-item:last-child{border-bottom:none}
+.contact-card h3 + .contact-item{border-top:1px solid var(--gray-200)}
 .contact-item .ci-ico{
   flex:0 0 40px;height:40px;border-radius:11px;
   background:linear-gradient(135deg,var(--green-500),var(--green-700));
