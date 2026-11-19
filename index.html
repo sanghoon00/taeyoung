@@ -251,9 +251,10 @@ header{
 .contact-card{display:flex;flex-direction:column}
 .contact-item{
   display:flex;gap:14px;align-items:center;
-  flex:1;padding:12px 0;border-bottom:1px solid var(--gray-200);
+  flex:1;padding:12px 30px;margin:0 -30px;border-bottom:1px solid var(--gray-200);
 }
 .contact-card h3 + .contact-item{border-top:1px solid var(--gray-200)}
+.contact-item:last-child{margin-bottom:-34px;border-bottom:none}
 .contact-item .ci-ico{
   flex:0 0 40px;height:40px;border-radius:11px;
   background:linear-gradient(135deg,var(--green-500),var(--green-700));
