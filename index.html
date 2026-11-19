@@ -221,6 +221,19 @@ header{
 .sv-card h3{font-size:clamp(18px,2.2vw,21px);font-weight:800;margin-bottom:10px;color:var(--green-900)}
 .sv-card p{font-size:15px;color:var(--gray-600)}
 
+/* ===== 장애인표준사업장 특별한 혜택 ===== */
+.ben-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.ben-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.ben-tag{font-size:13px;font-weight:700;color:var(--green-700);background:var(--green-50);border:1px solid var(--green-100);padding:6px 14px;border-radius:999px}
+.ben-list{display:flex;flex-direction:column;gap:14px}
+.ben-item{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:20px 22px;transition:border-color .25s, box-shadow .25s}
+.ben-item:hover{border-color:var(--green-300);box-shadow:var(--shadow)}
+.ben-icon{flex-shrink:0;width:44px;height:44px;border-radius:12px;background:var(--green-50);display:flex;align-items:center;justify-content:center;font-size:20px}
+.ben-item h5{font-size:16px;font-weight:800;color:var(--green-900);margin-bottom:4px}
+.ben-item p{font-size:14px;color:var(--gray-600);line-height:1.6}
+.ben-note{margin-top:18px;text-align:right;font-size:13.5px;color:var(--gray-600)}
+@media(max-width:860px){.ben-wrap{grid-template-columns:1fr;gap:32px}}
+
 /* ===== Contact ===== */
 .contact-wrap{
   display:grid;
@@ -376,33 +389,52 @@ footer .copy{margin-top:16px;font-size:13px;color:rgba(255,255,255,.5)}
   </div>
 </section>
 
-<!-- Linked Employment -->
+<!-- Linked Employment : 장애인표준사업장의 특별한 혜택 -->
 <section id="linked">
-  <div class="container">
-    <span class="sec-label">LINKED EMPLOYMENT</span>
-    <h2 class="sec-title">장애인표준사업장<br>연계고용의 특별한 혜택</h2>
-    <p class="sec-desc">주식회사 태영관리와 연계고용 도급계약을 체결하는 기업은 장애인 고용부담금을 최대 90%까지 감면받을 수 있습니다.</p>
-    <div class="identity-grid">
-      <div class="id-card">
-        <div class="ico">💰</div>
-        <h3>부담금 최대 90% 감면</h3>
-        <p>도급계약을 통해 납부할 장애인 고용부담금을 최대 90%까지 줄일 수 있습니다.</p>
+  <div class="container ben-wrap">
+    <div>
+      <span class="sec-label">장애인 표준사업장</span>
+      <h2 class="sec-title">장애인표준사업장의<br>특별한 혜택</h2>
+      <p class="sec-desc">㈜태영관리와 연계고용 계약을 체결하는 기업은 <strong style="color:var(--green-700)">고용부담금 최대 90% 감면</strong>과 장애인 의무고용 이행 인정 혜택을 받을 수 있습니다. 금액에 관계없이 수의계약이 가능합니다.</p>
+      <p class="sec-desc" style="margin-top:12px">함께 일하는 더 나은 세상 — 태영관리는 장애인표준사업장으로서, 장애인과 함께 일하는 지속 가능한 사회적 가치를 만들어 갑니다.</p>
+      <div class="ben-tags">
+        <span class="ben-tag">부담금 최대 90% 감면</span>
+        <span class="ben-tag">의무고용 이행 인정</span>
+        <span class="ben-tag">금액 제한 없이 수의계약 가능</span>
       </div>
-      <div class="id-card">
-        <div class="ico">✅</div>
-        <h3>의무고용 이행 인정</h3>
-        <p>당사 장애인 근로자를 귀사가 고용한 것으로 간주하여 부담금 감면에 반영합니다.</p>
+    </div>
+    <div>
+      <div class="ben-list">
+        <div class="ben-item">
+          <div class="ben-icon">💰</div>
+          <div>
+            <h5>최대 90% 감면 (부담금/최대감면금 계산기 제공)</h5>
+            <p>태영관리와 연계고용 계약 체결만으로 장애인 고용부담금을 최대 90%까지 감면받을 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="ben-item">
+          <div class="ben-icon">✅</div>
+          <div>
+            <h5>연계고용에 따른 의무고용 이행 인정 (간접고용 효과)</h5>
+            <p>상시근로자 100인 이상 기업의 장애인 고용의무(3.1%) 이행으로 인정되어 부담금 납부를 절감합니다.</p>
+          </div>
+        </div>
+        <div class="ben-item">
+          <div class="ben-icon">📄</div>
+          <div>
+            <h5>금액 제한 없이 수의계약 가능</h5>
+            <p>금액 제한 없이 계약 체결</p>
+          </div>
+        </div>
+        <div class="ben-item">
+          <div class="ben-icon">📋</div>
+          <div>
+            <h5>간편한 3단계 절차</h5>
+            <p>① 연계고용 계약 체결 → ② 발주 및 납품(용역)<br>→ ③ 부담금 감면 신청 및 승인의 간편한 절차로 진행됩니다.</p>
+          </div>
+        </div>
       </div>
-      <div class="id-card">
-        <div class="ico">📄</div>
-        <h3>수의계약 가능</h3>
-        <p>장애인표준사업장으로서 공공기관과 수의계약 체결이 가능합니다.</p>
-      </div>
-      <div class="id-card">
-        <div class="ico">🌏</div>
-        <h3>ESG 가치 실현</h3>
-        <p>장애인 일자리 창출에 함께하며 기업의 사회적 책임을 실천할 수 있습니다.</p>
-      </div>
+      <p class="ben-note">정부 인증과 법적 자격이 뒷받침하는<br>투명하고 검증된 서비스를 제공합니다.</p>
     </div>
   </div>
 </section>
